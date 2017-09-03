@@ -10,3 +10,5 @@ Friendly勉強会用第一回目のリポジトリです。
 - WpfApplication  
   UIテストに使用するサンプルプロジェクトです。
 
+ここで使用するプロジェクトは、以下のページを参照してください。  
+http://www.codeer.co.jp/download/handson
