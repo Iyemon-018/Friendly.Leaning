@@ -1,0 +1,38 @@
+﻿<Controls:MetroWindow x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        Icon="deer.ico"
+        ShowIconOnTitleBar="False"
+        xmlns:c="clr-namespace:VVMConnection;assembly=VVMConnection"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        Title="Friendly Handson" Height="510.017" Width="617.26">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="Open_Click"/>
+                <MenuItem Header="Save" Click="Save_Click"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="Version" Click="Version_Click"/>
+            </MenuItem>
+        </Menu>
+        <TabControl Grid.Row="1" Margin="0,16,0,0" Controls:TabControlHelper.IsUnderlined="True">
+            <TabItem Header="DemoSimpleControl" Width="250">
+                <local:DemoSimpleControl Width="auto" Height="auto" Margin="10,0,0,0"/>
+            </TabItem>
+            <TabItem Header="DemoItemsControl" Width="250">
+                <local:DemoItemsControl Width="auto" Height="auto" Margin="10,0"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Controls:MetroWindow>
